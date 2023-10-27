@@ -1,6 +1,6 @@
 {
   "name": "tccore-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CommandersAct's TCCore mobile library bridge to react-native",
   "main": "src/index",
   "module": "src/index",
