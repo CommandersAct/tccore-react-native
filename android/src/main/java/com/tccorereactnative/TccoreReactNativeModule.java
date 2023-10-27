@@ -62,18 +62,6 @@ public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void addAdditionalPropertyWithArrayValue(String key, ReadableArray value, String className)
-  {
-    if (value != null)
-    {
-      if (className.equals("TCUser"))
-      {
-        TCUser.getInstance().addAdditionalProperty(key, value.toArrayList());
-      }
-    }
-  }
-
-  @ReactMethod
   public void setStringValue(String key, String value, String className)
   {
     Object obj = null;

@@ -336,12 +336,6 @@ export class TCUser
         TCCoreBridge.addAdditionalPropertyWithNumberValue(key, value, TCUser.name);
     }
 
-    addAdditionalPropertyWithArrayValue(key: string, value: Array<any>)
-    {
-        this.additionalProperties.set(key, value);
-        TCCoreBridge.addAdditionalPropertyWithArrayValue(key, value, TCUser.name);
-    }
-
     getAdditionalProperties(): Map<string, any>
     {
       return this.additionalProperties;

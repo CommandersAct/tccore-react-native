@@ -11,7 +11,7 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.72.4)
   - fmt (6.2.1)
   - glog (0.3.5)
-  - IOSV5-TCCore (5.2.5)
+  - IOSV5-TCCore (5.3.1)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -389,11 +389,11 @@ PODS:
     - React-logger (= 0.72.4)
     - React-perflogger (= 0.72.4)
   - SocketRocket (0.6.1)
-  - tccore-react-native (0.1.2):
-    - IOSV5-TCCore (= 5.2.5)
+  - tccore-react-native (1.0.0):
+    - IOSV5-TCCore (= 5.3.1)
     - React-Core
-  - tccore-react-native-swift (0.1.0):
-    - IOSV5-TCCore (= 5.2.5)
+  - tccore-react-native-swift (1.0.0):
+    - IOSV5-TCCore (= 5.3.1)
     - tccore-react-native
   - Yoga (1.14.0)
 
@@ -535,7 +535,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: 3fc2d478e1c4b08276f9dd9128f80ec6d5d85c1f
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
-  IOSV5-TCCore: b61f1d00e57ace7c9b4a3b7f53639e531a3d42b8
+  IOSV5-TCCore: 90a7566019c2b2a8a9d650978572e00a9e7f9604
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: c0569ecc035894e4a68baecb30fe6a7ea6e399f9
   RCTTypeSafety: e90354072c21236e0bcf1699011e39acd25fea2f
@@ -569,8 +569,8 @@ SPEC CHECKSUMS:
   React-utils: 140d9a36004f14327cec6b43276220a91efec504
   ReactCommon: ab25b07b7bc0760bfaf8baf80db14d828dc9726a
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  tccore-react-native: 0065c34e34c0a0596cf639d8aa88547adfb75aac
-  tccore-react-native-swift: 8d2dd5616d8bfa2d6ce0214ad2844404bba09df6
+  tccore-react-native: cc743c34990e42d6d9d92a57013a5d32984bde3a
+  tccore-react-native-swift: 9810dc29f74b121683600cc62a56da6a9410ce1b
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
 
 PODFILE CHECKSUM: bc1e89e2581319c411e9e661eaf79fc92e887063

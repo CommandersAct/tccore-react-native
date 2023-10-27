@@ -2,9 +2,14 @@
 
 @interface RCT_EXTERN_MODULE(TccoreReactNative, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
-                 withRejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(setStringValue: (NSString *) key value: (NSString *) value className: (NSString *) className)
+RCT_EXTERN_METHOD(setNumValue: (NSString *) key value: (double) value className: (NSString *) className)
+RCT_EXTERN_METHOD(clearAdditionalProperties: (NSString *) className)
+RCT_EXTERN_METHOD(addAdditionalProperty: (NSString *) key value: (NSString*) value className: (NSString*) className)
+RCT_EXTERN_METHOD(addAdditionalPropertyWithMapValue: (NSString *) key value: (NSDictionary*) value className: (NSString*) className)
+RCT_EXTERN_METHOD(addAdditionalPropertyWithBooleanValue: (NSString *) key value: (BOOL) value className: (NSString*) className)
+RCT_EXTERN_METHOD(addAdditionalPropertyWithNumberValue: (NSString *) key value: (double) value className: (NSString*) className)
+RCT_EXTERN_METHOD(removeAdditionalProperty: (NSString *) key className: (NSString*) className)
 
 + (BOOL)requiresMainQueueSetup
 {
