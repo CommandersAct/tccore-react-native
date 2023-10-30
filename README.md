@@ -1,31 +1,14 @@
 # tccore-react-native
 
-CommandersAct's TCCore mobile library bridge to react-native
+CommandersAct's TCCore mobile library bridge to react-native. 
 
-## Installation
+This bridge is mainly used to bridge the core module. You will need to add this dependency to your app if you wanna use the other [TCServerSide](https://github.com/CommandersAct/tcserverside-react-native) and [TCConsent](https://github.com/CommandersAct/tcconsent-react-native) bridges. 
 
-```sh
-npm install tccore-react-native
-```
 
-## Usage
+# Usage : 
 
-```js
-import { multiply } from 'tccore-react-native';
 
-// ...
+Main usage of this module in your app will be related to the TCUser scheme, if you wanna read or overwrite the SDK values for the TCUser class. 
 
-const result = await multiply(3, 7);
-```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+please check our [TDemoReactNative](https://github.com/CommandersAct/TCDemoReactNative)
+ 
