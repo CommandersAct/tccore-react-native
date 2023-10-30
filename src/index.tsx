@@ -1,1 +1,2 @@
-export { TCUser, sharedTCUserInstance } from './TCUser';
+import {TCUser} from "./TCUser"
+export const TCUserInstance = new TCUser();

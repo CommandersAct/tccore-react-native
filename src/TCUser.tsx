@@ -2,7 +2,6 @@ import { TCCoreBridge } from "./TCCore";
 
 export class TCUser
 {
-    private static instance: TCUser;
     private additionalProperties = new Map();
 
     private _ID: string;
@@ -25,17 +24,7 @@ export class TCUser
     private _consent_vendors: Object;
 
 
-    private constructor() { }
-
-    public static getInstance(): TCUser
-    {
-        if (!TCUser.instance)
-        {
-            TCUser.instance = new TCUser();
-        }
-
-        return TCUser.instance;
-    }
+    constructor() { }
 
     public set ID(val: string) 
     {
@@ -353,5 +342,3 @@ export class TCUser
         TCCoreBridge.clearAdditionalProperties(TCUser.name)
     }  
 }
-
-export const sharedTCUserInstance = TCUser.getInstance();
