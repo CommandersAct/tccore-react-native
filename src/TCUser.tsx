@@ -353,3 +353,5 @@ export class TCUser
         TCCoreBridge.clearAdditionalProperties(TCUser.name)
     }  
 }
+
+export const sharedTCUserInstance = TCUser.getInstance();

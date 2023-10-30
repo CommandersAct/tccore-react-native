@@ -1,1 +1,1 @@
-export { TCUser } from './TCUser';
+export { TCUser, sharedTCUserInstance } from './TCUser';
