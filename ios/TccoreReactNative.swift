@@ -59,4 +59,13 @@ class TccoreReactNative: NSObject {
             TCUser.sharedInstance().clearAdditionalProperties()
         }
     }
+    
+    @objc(setStringValue:value:className:)
+    func setStringValue(key: String, value: String, className: String) -> Void
+    {
+        if (className == "TCUser")
+        {
+            TCUser.sharedInstance().setValue(value, forKey: key)
+        }
+    }
 }
