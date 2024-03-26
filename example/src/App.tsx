@@ -1,17 +1,17 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import {TCUser} from "tccore-react-native";
+import { TCUserInstance} from "@commandersact/tccore-react-native";
 
 
-function testibbg()
+function test()
 {
-  TCUser.getInstance().ID = "12"
+  TCUserInstance.ID = "12"
 }
 
 export default function App() {
 
-  testibbg()
+  test()
   return (
     <View style={styles.container}>
       <Text>Result: TCUser </Text>
