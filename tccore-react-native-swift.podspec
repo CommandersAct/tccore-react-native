@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   s.dependency 'tccore-react-native'
-  s.dependency 'IOSV5-TCCore', '5.3.4'
+  s.dependency 'IOSV5-TCCore', '5.4.0'
 
 end
 
