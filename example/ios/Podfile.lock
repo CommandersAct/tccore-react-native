@@ -389,10 +389,10 @@ PODS:
     - React-logger (= 0.72.4)
     - React-perflogger (= 0.72.4)
   - SocketRocket (0.6.1)
-  - tccore-react-native (1.2.2):
+  - tccore-react-native (1.2.4):
     - IOSV5-TCCore (= 5.4.0)
     - React-Core
-  - tccore-react-native-swift (1.2.2):
+  - tccore-react-native-swift (1.2.4):
     - IOSV5-TCCore (= 5.4.0)
     - tccore-react-native
   - Yoga (1.14.0)
@@ -437,7 +437,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - tccore-react-native (from `../..`)
-  - tccore-react-native-swift (from `../node_modules/tccore-react-native/tccore-react-native-swift.podspec`)
+  - "tccore-react-native-swift (from `../node_modules/@commandersact/tccore-react-native/tccore-react-native-swift.podspec`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -524,7 +524,7 @@ EXTERNAL SOURCES:
   tccore-react-native:
     :path: "../.."
   tccore-react-native-swift:
-    :path: "../node_modules/tccore-react-native/tccore-react-native-swift.podspec"
+    :path: "../node_modules/@commandersact/tccore-react-native/tccore-react-native-swift.podspec"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -569,10 +569,10 @@ SPEC CHECKSUMS:
   React-utils: 337404582dbb9962b2702a85821fa83e73cffa44
   ReactCommon: 1b68b6b6340f44afd5af83ae74c5c53d239c4936
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  tccore-react-native: fff46fea4b28eced97207fd17ed7f912206d5800
-  tccore-react-native-swift: 1434ae26d94777b464fce2859e13958d18df7493
+  tccore-react-native: e82e2e6b37844bf1774787abf901a812be627e05
+  tccore-react-native-swift: ad4adb3f03734b0e4690153b4fdac20aa56cfa00
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
 
-PODFILE CHECKSUM: bc1e89e2581319c411e9e661eaf79fc92e887063
+PODFILE CHECKSUM: 0589022e762a8894262aea69471120d281dba648
 
 COCOAPODS: 1.15.2

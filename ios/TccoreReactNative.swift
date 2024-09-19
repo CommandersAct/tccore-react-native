@@ -68,4 +68,16 @@ class TccoreReactNative: NSObject {
             TCUser.sharedInstance().setValue(value, forKey: key)
         }
     }
+    
+    @objc(setExternalConsent:)
+    func setExternalConsent(value: Dictionary<String, Any>) -> Void
+    {
+        TCUser.sharedInstance().setExternalConsent(value)
+    }
+    
+    @objc(setConsentVendors:)
+    func setConsentVendors(value: Dictionary<String, Any>) -> Void
+    {
+        TCUser.sharedInstance().setConsentVendors(value)
+    }
 }
