@@ -10,6 +10,8 @@ RCT_EXTERN_METHOD(addAdditionalPropertyWithMapValue: (NSString *) key value: (NS
 RCT_EXTERN_METHOD(addAdditionalPropertyWithBooleanValue: (NSString *) key value: (BOOL) value className: (NSString*) className)
 RCT_EXTERN_METHOD(addAdditionalPropertyWithNumberValue: (NSString *) key value: (double) value className: (NSString*) className)
 RCT_EXTERN_METHOD(removeAdditionalProperty: (NSString *) key className: (NSString*) className)
+RCT_EXTERN_METHOD(setExternalConsent: (NSDictionary*) value)
+RCT_EXTERN_METHOD(setConsentVendors: (NSDictionary*) value)
 
 + (BOOL)requiresMainQueueSetup
 {
