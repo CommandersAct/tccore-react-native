@@ -172,10 +172,10 @@ export class TCUser
 
     public set external_consent(val: Object) 
     {
-        if (this._external_consent !== val)
-         {
+        if (this._external_consent !== val) 
+        {
             this._external_consent = val;
-            TCCoreBridge.setExternalConsent("external_consent", val, TCUser.name);
+            TCCoreBridge.setExternalConsent(val);
         }
     }
 
@@ -184,7 +184,7 @@ export class TCUser
         if (this._consent_vendors !== val) 
         {
             this._consent_vendors = val;
-            TCCoreBridge.setConsentVendors("consent_vendors", val, TCUser.name);
+            TCCoreBridge.setConsentVendors(val);
         }
     }
 
