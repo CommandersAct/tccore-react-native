@@ -10,6 +10,7 @@ We are using fixed versions for the TCcore in our iOS podspec to prevent unwante
 
 #tccore-react-native | #tcserverside-react-native | #tcconsent-react-native |
 --- | --- | --- |
+| 1.2.5 | 1.2.4 | 1.3.7* |
 | 1.2.4 | 1.2.3 | 1.3.6* |
 | 1.2.3 | 1.2.2 | 1.3.5* |
 
