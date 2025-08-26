@@ -6,5 +6,5 @@ import Foundation
 
 struct TCCoreReactNativeGenerated
 {
-    static let version = "1.2.6"
+    static let version = "1.2.7"
 }
