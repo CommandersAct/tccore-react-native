@@ -1,3 +1,7 @@
+## 1.2.8
+
+* Upgrade Android Core dependency to v(5.4.9)[https://github.com/CommandersAct/AndroidV5/blob/master/TCCore/changelog_Android_Core.md]
+
 ## 1.2.7 
 
 * Upgrade Pod IOS-V5 dependency to v(5.4.3)[https://github.com/CommandersAct/iOSV5/blob/master/TCCore/changelog_iOS_Core.md]
