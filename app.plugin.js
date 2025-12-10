@@ -1,8 +1,8 @@
 const { createRunOncePlugin } = require("@expo/config-plugins");
 
-const packageInfo = require("../package.json");
+const pkg = require("../package.json");
 
-const pkg = (config) => {
+const withTCCorePlugin = (config) => {
   return config;
 };
 
