@@ -175,18 +175,4 @@ public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
       TCUser.getInstance().clearAdditionalProperties();
     }
   }
-
-  @ReactMethod
-  private String getTCUserJson()
-  {
-    try
-    {
-      return TCUser.getInstance().getJsonObject().put("consentID", TCUser.getInstance().consentID).toString();
-    }
-    catch (JSONException e)
-    {
-      e.printStackTrace();
-    }
-    return "";
-  }
 }
