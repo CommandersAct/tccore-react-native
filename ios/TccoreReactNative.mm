@@ -3,7 +3,6 @@
 @interface RCT_EXTERN_MODULE(TccoreReactNative, NSObject)
 
 RCT_EXTERN_METHOD(setStringValue: (NSString *) key value: (NSString *) value className: (NSString *) className)
-RCT_EXTERN_METHOD(setNumValue: (NSString *) key value: (double) value className: (NSString *) className)
 RCT_EXTERN_METHOD(clearAdditionalProperties: (NSString *) className)
 RCT_EXTERN_METHOD(addAdditionalProperty: (NSString *) key value: (NSString*) value className: (NSString*) className)
 RCT_EXTERN_METHOD(addAdditionalPropertyWithMapValue: (NSString *) key value: (NSDictionary*) value className: (NSString*) className)
