@@ -1,3 +1,8 @@
+## 1.3.2
+
+* Updated iOS dependencies to TCCore 5.4.5
+* Added proguard rules for android.
+
 ## 1.3.1
 
 * Fixing warnings for bridged functions.
