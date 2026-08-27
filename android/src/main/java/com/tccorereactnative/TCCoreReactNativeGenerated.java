@@ -6,5 +6,5 @@ package com.tccorereactnative;
 
 public class TCCoreReactNativeGenerated
 {
-    public static final String version = "1.3.2";
+    public static final String version = "1.4.0";
 }

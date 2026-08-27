@@ -1,6 +1,14 @@
+## Changelogs
+For more information on the native SDK changelogs, please refer to the GitHub releases: [Android](https://github.com/CommandersAct/AndroidV5/releases) / [iOS](https://github.com/CommandersAct/iOSV5/releases)
+
+## 1.4.0
+
+* Upgrade Android Core dependency to v(5.5.0)[https://github.com/CommandersAct/AndroidV5/blob/master/TCCore/changelog_Android_Core.md]
+* Added TCDebug instance for native logs.
+
 ## 1.3.2
 
-* Updated iOS dependencies to TCCore 5.4.5
+* Updated iOS dependencies to TCCore 5.4.5.
 * Added proguard rules for android.
 
 ## 1.3.1

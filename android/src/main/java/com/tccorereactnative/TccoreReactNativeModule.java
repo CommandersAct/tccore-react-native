@@ -4,24 +4,19 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableMapKeySetIterator;
 import com.facebook.react.module.annotations.ReactModule;
-import com.tagcommander.lib.core.TCAdditionalProperties;
+import com.tagcommander.lib.core.TCDebug;
 import com.tagcommander.lib.core.TCLogger;
 import com.tagcommander.lib.core.TCUser;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Field;
 import java.util.HashMap;
-import java.util.Map;
 
 @ReactModule(name = TccoreReactNativeModule.NAME)
 public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
@@ -80,7 +75,7 @@ public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
       {
         try
         {
-          Field field = clazz.getDeclaredField(key);
+          java.lang.reflect.Field field = clazz.getDeclaredField(key);
           field.setAccessible(true);
           field.set(obj, value);
           return;
@@ -98,12 +93,20 @@ public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
     }
   }
 
+  /**
+   * @deprecated You shouldn't set consent directly into TCUser. Use the TCConsent module APIs, or setExternalConsent() instead. This method will be removed in a future release.
+   */
+  @Deprecated
   @ReactMethod
   public void setConsentCategories(ReadableMap value)
   {
     TCUser.getInstance().setConsentCategories(convertReadableMapToHashMap(value));
   }
 
+  /**
+   * @deprecated You shouldn't set consent directly into TCUser. Use the TCConsent module APIs, or setExternalConsent() instead. This method will be removed in a future release.
+   */
+  @Deprecated
   @ReactMethod
   public void setConsentVendors(ReadableMap value)
   {
@@ -153,12 +156,9 @@ public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
     }
   }
 
-
   @ReactMethod
   public void addAdditionalPropertyWithNumberValue(String key, double value, String className)
   {
-    TCAdditionalProperties obj = null;
-
     if (className.equals("TCUser"))
     {
       TCUser.getInstance().addAdditionalProperty(key, Double.valueOf(value).floatValue());
@@ -168,11 +168,21 @@ public class TccoreReactNativeModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void clearAdditionalProperties(String className)
   {
-    TCAdditionalProperties obj = null;
-
     if (className.equals("TCUser"))
     {
       TCUser.getInstance().clearAdditionalProperties();
     }
+  }
+
+  @ReactMethod
+  public void enableNativeDebug()
+  {
+    TCDebug.setDebugLevel(Log.VERBOSE);
+  }
+
+  @ReactMethod
+  public void disableNativeDebug()
+  {
+    TCDebug.setDebugLevel(Log.ASSERT);
   }
 }

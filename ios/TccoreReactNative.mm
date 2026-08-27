@@ -11,6 +11,9 @@ RCT_EXTERN_METHOD(addAdditionalPropertyWithNumberValue: (NSString *) key value: 
 RCT_EXTERN_METHOD(removeAdditionalProperty: (NSString *) key className: (NSString*) className)
 RCT_EXTERN_METHOD(setExternalConsent: (NSDictionary*) value)
 RCT_EXTERN_METHOD(setConsentVendors: (NSDictionary*) value)
+RCT_EXTERN_METHOD(setConsentCategories: (NSDictionary*) value)
+RCT_EXTERN_METHOD(enableNativeDebug)
+RCT_EXTERN_METHOD(disableNativeDebug)
 
 + (BOOL)requiresMainQueueSetup
 {

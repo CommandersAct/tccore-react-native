@@ -1,4 +1,4 @@
-import { TCCoreBridge } from "./TCCore";
+import { TCCoreBridge } from './TCCore';
 
 export class TCUser
 {
@@ -23,165 +23,170 @@ export class TCUser
     private _external_consent: Object;
     private _consent_vendors: Object;
 
-
     constructor() { }
 
-    public set ID(val: string) 
+    public set ID(val: string)
     {
-        if (this._ID !== val) 
+        if (this._ID !== val)
         {
             this._ID = val;
-            TCCoreBridge.setStringValue("ID", val, TCUser.name);
+            TCCoreBridge.setStringValue('ID', val, TCUser.name);
         }
     }
 
-    public set email(val: string) 
+    public set email(val: string)
     {
-        if (this._email !== val) 
+        if (this._email !== val)
         {
             this._email = val;
-            TCCoreBridge.setStringValue("email", val, TCUser.name);
+            TCCoreBridge.setStringValue('email', val, TCUser.name);
         }
     }
 
-    public set email_md5(val: string) 
+    public set email_md5(val: string)
     {
-        if (this._email_md5 !== val) 
+        if (this._email_md5 !== val)
         {
             this._email_md5 = val;
-            TCCoreBridge.setStringValue("email_md5", val, TCUser.name);
+            TCCoreBridge.setStringValue('email_md5', val, TCUser.name);
         }
     }
 
-    public set email_sha256(val: string) 
+    public set email_sha256(val: string)
     {
         if (this._email_sha256 !== val)
         {
             this._email_sha256 = val;
-            TCCoreBridge.setStringValue("email_sha256", val, TCUser.name);
+            TCCoreBridge.setStringValue('email_sha256', val, TCUser.name);
         }
     }
 
-    public set consentID(val: string) 
+    public set consentID(val: string)
     {
-        if (this._consentID !== val) 
+        if (this._consentID !== val)
         {
             this._consentID = val;
-            TCCoreBridge.setStringValue("consentID", val, TCUser.name);
+            TCCoreBridge.setStringValue('consentID', val, TCUser.name);
         }
     }
 
-    public set phoneNumber(val: string) 
+    public set phoneNumber(val: string)
     {
-        if (this._phoneNumber !== val) 
+        if (this._phoneNumber !== val)
         {
             this._phoneNumber = val;
-            TCCoreBridge.setStringValue("phoneNumber", val, TCUser.name);
+            TCCoreBridge.setStringValue('phoneNumber', val, TCUser.name);
         }
     }
 
-    public set firstName(val: string) 
+    public set firstName(val: string)
     {
-        if (this._firstName !== val) 
+        if (this._firstName !== val)
         {
             this._firstName = val;
-            TCCoreBridge.setStringValue("firstName", val, TCUser.name);
+            TCCoreBridge.setStringValue('firstName', val, TCUser.name);
         }
     }
 
-    public set lastName(val: string) 
+    public set lastName(val: string)
     {
-        if (this._lastName !== val) 
+        if (this._lastName !== val)
         {
             this._lastName = val;
-            TCCoreBridge.setStringValue("lastName", val, TCUser.name);
+            TCCoreBridge.setStringValue('lastName', val, TCUser.name);
         }
     }
 
-    public set gender(val: string) 
+    public set gender(val: string)
     {
-        if (this._gender !== val) 
+        if (this._gender !== val)
         {
             this._gender = val;
-            TCCoreBridge.setStringValue("gender", val, TCUser.name);
+            TCCoreBridge.setStringValue('gender', val, TCUser.name);
         }
     }
 
-    public set birthdate(val: string) 
+    public set birthdate(val: string)
     {
-        if (this._birthdate !== val) 
+        if (this._birthdate !== val)
         {
             this._birthdate = val;
-            TCCoreBridge.setStringValue("birthdate", val, TCUser.name);
+            TCCoreBridge.setStringValue('birthdate', val, TCUser.name);
         }
     }
 
-    public set city(val: string) 
+    public set city(val: string)
     {
-        if (this._city !== val) 
+        if (this._city !== val)
         {
             this._city = val;
-            TCCoreBridge.setStringValue("city", val, TCUser.name);
+            TCCoreBridge.setStringValue('city', val, TCUser.name);
         }
     }
 
-    public set state(val: string) 
+    public set state(val: string)
     {
-        if (this._state !== val) 
+        if (this._state !== val)
         {
             this._state = val;
-            TCCoreBridge.setStringValue("state", val, TCUser.name);
+            TCCoreBridge.setStringValue('state', val, TCUser.name);
         }
     }
 
     public set zipcode(val: string)
-     {
-        if (this._zipcode !== val) 
+    {
+        if (this._zipcode !== val)
         {
             this._zipcode = val;
-            TCCoreBridge.setStringValue("zipcode", val, TCUser.name);
+            TCCoreBridge.setStringValue('zipcode', val, TCUser.name);
         }
     }
 
-    public set country(val: string) 
+    public set country(val: string)
     {
-        if (this._country !== val) 
+        if (this._country !== val)
         {
             this._country = val;
-            TCCoreBridge.setStringValue("country", val, TCUser.name);
+            TCCoreBridge.setStringValue('country', val, TCUser.name);
         }
     }
 
     public set anonymous_id(val: string)
-     {
-        if (this._anonymous_id !== val) 
+    {
+        if (this._anonymous_id !== val)
         {
             this._anonymous_id = val;
-            TCCoreBridge.setStringValue("anonymous_id", val, TCUser.name);
+            TCCoreBridge.setStringValue('anonymous_id', val, TCUser.name);
         }
     }
 
-    public set consent_categories(val: Object) 
+    /**
+     * @deprecated You shouldn't set consent directly into TCUser. Use the TCConsent module APIs, or externalConsent instead. This method will be removed in a future release.
+     */
+    public set consent_categories(val: Object)
     {
-        if (this._consent_categories !== val) 
+        if (this._consent_categories !== val)
         {
             this._consent_categories = val;
-            TCCoreBridge.setConsentCategories("consent_categories", val, TCUser.name);
+            TCCoreBridge.setConsentCategories(val);
         }
     }
 
-    public set external_consent(val: Object) 
+    public set external_consent(val: Object)
     {
-        if (this._external_consent !== val) 
+        if (this._external_consent !== val)
         {
             this._external_consent = val;
             TCCoreBridge.setExternalConsent(val);
         }
     }
 
-    public set consent_vendors(val: Object) 
+    /**
+     * @deprecated You shouldn't set consent directly into TCUser. Use the TCConsent module APIs, or externalConsent instead. This method will be removed in a future release.
+     */
+    public set consent_vendors(val: Object)
     {
-        if (this._consent_vendors !== val) 
+        if (this._consent_vendors !== val)
         {
             this._consent_vendors = val;
             TCCoreBridge.setConsentVendors(val);
@@ -263,6 +268,9 @@ export class TCUser
         return this._anonymous_id;
     }
 
+    /**
+     * @deprecated You shouldn't read consent directly from TCUser. Use the TCConsent module APIs, or externalConsent instead. This method will be removed in a future release.
+     */
     public get getConsentCategories()
     {
         return this._consent_categories;
@@ -273,6 +281,9 @@ export class TCUser
         return this._external_consent;
     }
 
+    /**
+     * @deprecated You shouldn't read consent directly from TCUser. Use the TCConsent module APIs, or externalConsent instead. This method will be removed in a future release.
+     */
     public get getConsentVendors()
     {
         return this._consent_vendors;
@@ -280,25 +291,25 @@ export class TCUser
 
     initValues(properties: any)
     {
-       this._ID = properties["ID"] as string
-       this._email = properties["email"] as string;
-       this._email_md5 = properties["email_md5"] as string;
-       this._email_sha256 = properties["email_sha256"] as string;
-       this._consentID = properties["consentID"] as string;
-       this._phoneNumber = properties["phoneNumber"] as string;
-       this._firstName = properties["firstName"] as string;
-       this._lastName = properties["lastName"] as string;
-       this._gender = properties["gender"] as string;
-       this._birthdate = properties["birthdate"] as string;
-       this._city = properties["city"] as string;
-       this._state = properties["state"] as string;
-       this._zipcode = properties["zipcode"] as string;
-       this._country = properties["country"] as string;
-       this._anonymous_id = properties["consistent_anonymous_id"] as string;
+        this._ID = properties.ID as string;
+        this._email = properties.email as string;
+        this._email_md5 = properties.email_md5 as string;
+        this._email_sha256 = properties.email_sha256 as string;
+        this._consentID = properties.consentID as string;
+        this._phoneNumber = properties.phoneNumber as string;
+        this._firstName = properties.firstName as string;
+        this._lastName = properties.lastName as string;
+        this._gender = properties.gender as string;
+        this._birthdate = properties.birthdate as string;
+        this._city = properties.city as string;
+        this._state = properties.state as string;
+        this._zipcode = properties.zipcode as string;
+        this._country = properties.country as string;
+        this._anonymous_id = properties.anonymous_id as string;
 
-       this._consent_categories = properties["consent_categories"] as Object;
-       this._consent_vendors = properties["consent_vendors"] as Object;
-       this._external_consent = properties["external_consent"] as Object;
+        this._consent_categories = properties.consent_categories as Object;
+        this._consent_vendors = properties.consent_vendors as Object;
+        this._external_consent = properties.external_consent as Object;
     }
 
     addAdditionalProperty(key: string, value: string)
@@ -327,7 +338,7 @@ export class TCUser
 
     getAdditionalProperties(): Map<string, any>
     {
-      return this.additionalProperties;
+        return this.additionalProperties;
     }
 
     removeAdditionalProperty(key: string)
@@ -339,6 +350,6 @@ export class TCUser
     clearAdditionalProperties()
     {
         this.additionalProperties.clear();
-        TCCoreBridge.clearAdditionalProperties(TCUser.name)
-    }  
+        TCCoreBridge.clearAdditionalProperties(TCUser.name);
+    }
 }
